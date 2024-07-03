@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  height: fit-content;
+
+  padding: 1rem 2rem;
+  background-color: gainsboro;
+}

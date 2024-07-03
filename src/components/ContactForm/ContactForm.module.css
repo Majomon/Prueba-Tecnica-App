@@ -1,0 +1,15 @@
+/* components/ContactForm.module.css */
+.contactForm {
+  padding: 20px;
+  height: 100vh;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+.contactForm label {
+  margin-bottom: 10px;
+}
+.contactForm button {
+  margin-top: 10px;
+}
