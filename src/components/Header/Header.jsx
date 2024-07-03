@@ -1,11 +1,12 @@
 import React from "react";
-import { HeaderContent, Nav } from "../ui";
+import { Headboard, Nav } from "../ui";
+import styles from "./Header.module.css"
 
 export const Header = () => {
   return (
-    <header>
+    <header className={styles.headerContainer }>
+      <Headboard />
       <Nav />
-      <HeaderContent />
     </header>
   );
 };

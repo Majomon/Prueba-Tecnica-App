@@ -1,13 +1,12 @@
 .nav {
   width: 50%;
-  list-style: none;
-  position: sticky;
-  
+  list-style: none; 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
+  padding: 0 5rem;
   margin: auto;
-  padding: 0.5rem 2rem;
 }
 
 .nav li a {
