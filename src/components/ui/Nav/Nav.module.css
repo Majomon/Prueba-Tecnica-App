@@ -1,0 +1,15 @@
+.nav {
+  width: 50%;
+  list-style: none;
+  position: sticky;
+  
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+  padding: 0.5rem 2rem;
+}
+
+.nav li a {
+  text-decoration: none;
+}
