@@ -2,19 +2,22 @@
   display: none;
 }
 
-
 @media (min-width: 640px) {
   .headerContainer {
-    width: 90%;
-    height: fit-content
-    ;
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 
-    margin: auto;
-    padding: .5rem;
+    background: rgb(235, 234, 144);
+    background: linear-gradient(
+      90deg,
+      rgba(235, 234, 144, 1) 0%,
+      rgba(245, 242, 12, 1) 100%
+    );
+    
+    padding: .5rem 1.5rem;
     position: sticky;
   }
 }

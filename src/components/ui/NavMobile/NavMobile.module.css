@@ -3,6 +3,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+
+  background: rgb(235, 234, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 234, 144, 1) 0%,
+    rgba(245, 242, 12, 1) 100%
+  );
+
   padding: 0.2rem 1rem;
 }
 
@@ -11,8 +19,9 @@
 }
 
 .img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
 }
 
 .button {
@@ -33,6 +42,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+
+  list-style: none;
   background-color: yellow;
   opacity: 0;
   transform: translateY(-50px);
@@ -46,10 +58,24 @@
 
 .modalContent {
   background-color: white;
-  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: auto;
+  box-shadow: 5px 5px 10px rgba(143, 134, 134, 1);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.modalContent:hover {
+  background-color: rgb(221, 227, 106);
+  transition: all 0.3s ease-in-out;
+}
+
+.modalContent:hover a {
+  color: white;
+}
+
+.modalContent a {
+  text-decoration: none;
 }
 
 @media (min-width: 640px) {

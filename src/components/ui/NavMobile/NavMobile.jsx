@@ -19,8 +19,8 @@ export const NavMobile = () => {
       <Image
         src="/profile.webp"
         alt="Imagen de perfil"
-        width={40}
-        height={40}
+        width={1000}
+        height={700}
         className={style.img}
       />
       <h1 className={style.h1}>
