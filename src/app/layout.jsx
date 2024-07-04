@@ -1,7 +1,5 @@
-import { Roboto } from "next/font/google";
+import { inter } from "@/config/fonts";
 import "./globals.css";
-
-const inter = Roboto({ subsets: ["latin"], weight: ["300", "400"] });
 
 export const metadata = {
   title: "Prueba tecnica - Perfil de usuario",

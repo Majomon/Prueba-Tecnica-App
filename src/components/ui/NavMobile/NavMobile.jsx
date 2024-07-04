@@ -23,9 +23,9 @@ export const NavMobile = () => {
         height={700}
         className={style.img}
       />
-      <h1 className={style.h1}>
+      <h2 className={style.h2}>
         {user.firstName} {user.lastName}
-      </h1>
+      </h2>
       <button className={style.button} onClick={handleClick}>
         {showModal ? <IoCloseOutline size={30} /> : <IoMenuOutline size={30} />}
       </button>
