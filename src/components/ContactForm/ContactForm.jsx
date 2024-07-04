@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,5 +61,3 @@ const ContactForm = () => {
     </section>
   );
 };
-
-export default ContactForm;

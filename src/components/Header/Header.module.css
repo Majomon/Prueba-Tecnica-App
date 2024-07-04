@@ -1,7 +1,20 @@
-.headerContainer  {
-  display: flex;
-  padding: .5rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.headerContainer {
+  display: none;
+}
+
+
+@media (min-width: 640px) {
+  .headerContainer {
+    width: 90%;
+    height: fit-content
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: auto;
+    padding: .5rem;
+    position: sticky;
+  }
 }
