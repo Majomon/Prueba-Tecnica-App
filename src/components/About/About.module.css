@@ -69,13 +69,5 @@
 }
 
 @media (min-width: 640px) {
-  .containerRight {
-    display: flex;
-  }
 
-  .paragraph {
-    width: 80%;
-    font-size: 10px;
-    margin: auto;
-  }
 }

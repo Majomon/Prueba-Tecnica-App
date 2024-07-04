@@ -1,11 +1,11 @@
 "use client";
+import navLinks from "@/data/navLinks";
 import user from "@/data/user";
 import Image from "next/image";
-import style from "./NavMobile.module.css";
-import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
-import { useState } from "react";
-import navLinks from "@/data/navLinks";
 import Link from "next/link";
+import { useState } from "react";
+import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
+import style from "./NavMobile.module.css";
 
 export const NavMobile = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,7 +32,6 @@ export const NavMobile = () => {
 
       <ul
         className={`${style.modalBackdrop} ${showModal ? style.showModal : ""}`}
-        onClick={handleClick}
       >
         {navLinks.map((link, index) => (
           <li key={index} className={style.modalContent}>
