@@ -4,6 +4,7 @@ import { IoCall, IoMailOpen, IoMap } from "react-icons/io5";
 import AnimationEmail from "../../../../public/animation/Animate-Email.json";
 import Lottie from "lottie-react";
 import styles from "./InfoContact.module.css";
+import Link from "next/link";
 
 export const InfoContact = () => {
   const phone = "+5491138612819";
@@ -16,21 +17,29 @@ export const InfoContact = () => {
       <ul className={`${titleFont.className} ${styles.ul}`}>
         <li>
           <IoCall size={20} />
-          <p>
-            Teléfono: <span>{phone}</span>
-          </p>
+          <Link href={`tel:${phone}`} className={styles.link}>
+            Teléfono: {phone}
+          </Link>
         </li>
         <li>
           <IoMailOpen size={20} />
-          <p>
-            Email: <span>{email}</span>
-          </p>
+          <Link href={`mailto:${email}`} className={styles.link}>
+            Email: {email}
+          </Link>
         </li>
         <li>
           <IoMap size={20} />
-          <p>
-            Dirección: <span>{map}</span>
-          </p>
+
+          <Link
+            href={`https://www.google.com/maps/search/${encodeURIComponent(
+              map
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            Dirección: {map}
+          </Link>
         </li>
       </ul>
       <div className={styles.containerLottie}>

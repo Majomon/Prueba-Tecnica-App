@@ -18,6 +18,11 @@
   font-size: 12px;
 }
 
+.link{
+  text-decoration: none;
+  color: var(--dark);
+}
+
 .containerLottie {
   width: 100%;
   display: flex;
