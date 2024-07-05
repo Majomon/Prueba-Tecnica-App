@@ -33,11 +33,13 @@ export const NavMobile = () => {
       <ul
         className={`${style.modalBackdrop} ${showModal ? style.showModal : ""}`}
       >
+        <div className={style.box1} />
         {navLinks.map((link, index) => (
-          <li key={index} className={style.modalContent}>
+          <li key={index} className={style.modalContent} onClick={handleClick}>
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
+        <div className={style.box2} />
       </ul>
     </div>
   );

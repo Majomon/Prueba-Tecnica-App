@@ -6,9 +6,9 @@ import style from "./Headboard.module.css";
 export const Headboard = () => {
   return (
     <div className={style.container}>
-      <h1 className={style.h1}>
+      <h2 className={style.h2}>
         {user.firstName} {user.lastName}
-      </h1>
+      </h2>
       <Image
         src="/profile.webp"
         alt="Imagen de perfil"

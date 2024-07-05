@@ -5,9 +5,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+
   padding: 0.2rem 1rem;
   position: sticky;
   top: 0;
+
+  background-color: var(--light);
+  box-shadow: inset;
+  padding: 0.5rem;
 }
 
 .h2 {
@@ -32,6 +37,8 @@
   visibility: hidden;
   opacity: 0;
   position: fixed;
+  overflow: hidden;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -41,7 +48,7 @@
   align-items: center;
   gap: 1rem;
   list-style: none;
-  background-color: yellow;
+  background-color: var(--orange-300);
   transform: translate(-150px, -150px);
   transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 }
@@ -64,15 +71,36 @@
 }
 
 .modalContent:hover {
-  background-color: rgb(221, 227, 106);
+  background-color: var(--orange-500);
 }
 
 .modalContent:hover a {
-  color: white;
+  font-weight: bold;
+  /* font-size: 1.2rem; */
 }
 
 .modalContent a {
   text-decoration: none;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  background-color: var(--orange-200);
+  transform: rotate(45deg);
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  background-color: var(--orange-200);
+  transform: rotate(45deg);
 }
 
 @media (min-width: 640px) {
