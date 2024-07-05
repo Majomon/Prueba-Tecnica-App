@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .box {
@@ -18,7 +19,7 @@
 }
 
 .valueInput {
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid var(--orange-500);
   resize: none;
@@ -33,8 +34,19 @@
   background-color: var(--orange-500);
   padding: 1rem;
   border-radius: 10px;
-  
+
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonSend:hover {
+  background-color: var(--orange-300);
+}
+
+.error {
+  padding: 0.5rem 0;
+  color: var(--danger);
+  font-weight: 500;
 }

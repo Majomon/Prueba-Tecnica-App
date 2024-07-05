@@ -9,8 +9,7 @@ export const ContactForm = () => {
 
   return (
     <section id="contact" className={styles.containerContact}>
-      <h2 className={titleFont.className}>Contáctame</h2>
-
+      <h2 className={`${titleFont.className} ${styles.contact}`}>Contáctame</h2>
       {success ? (
         <p>¡Mensaje enviado con éxito!</p>
       ) : (
