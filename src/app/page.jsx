@@ -1,4 +1,5 @@
 import { About } from "@/components/About/About";
+import { ContactForm } from "@/components/ContactForm/ContactForm";
 import { Header } from "@/components/Header/Header";
 import { Interests } from "@/components/Interests/Interests";
 import { NavMobile } from "@/components/ui";
@@ -11,7 +12,7 @@ export default function HomePage() {
       <NavMobile />
       <About />
       <Interests />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </div>
   );
 }
