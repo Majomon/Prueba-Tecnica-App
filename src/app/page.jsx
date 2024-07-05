@@ -1,7 +1,8 @@
+import { About } from "@/components/About/About";
 import { Header } from "@/components/Header/Header";
+import { Interests } from "@/components/Interests/Interests";
 import { NavMobile } from "@/components/ui";
 import styles from "./page.module.css";
-import { About } from "@/components/About/About";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,7 @@ export default function HomePage() {
       <Header />
       <NavMobile />
       <About />
-      {/* <Interests /> */}
+      <Interests />
       {/* <ContactForm /> */}
     </div>
   );
