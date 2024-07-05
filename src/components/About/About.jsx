@@ -20,10 +20,10 @@ export const About = () => {
               Contáctame
             </Link>
             <div className={styles.redes}>
-              <Link href={"https://www.facebook.com/"} target="_blank">
+              <Link href={"https://www.facebook.com/mauri.monzon.568"} target="_blank">
                 <IoLogoFacebook size={30} color="black" />
               </Link>
-              <Link href={"https://www.instagram.com/"} target="_blank">
+              <Link href={"https://www.instagram.com/maurimonzon_j/"} target="_blank">
                 <IoLogoInstagram size={30} color="black" />
               </Link>
             </div>

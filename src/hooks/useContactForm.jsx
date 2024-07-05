@@ -1,7 +1,12 @@
-import { useState } from "react";
+import sendEmail from "@/utils/sendEmail";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export const useContactForm = () => {
-  const [success, setSuccess] = useState(false);
+  const [messageState, setMessageState] = useState({
+    status: "",
+    message: "",
+  });
 
   const [formData, setFormData] = useState({
     name: "",
@@ -17,14 +22,27 @@ export const useContactForm = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      setSuccess(true);
+      try {
+        await sendEmail(formData.email);
+
+        setMessageState({
+          status: "ok",
+          message: "¡Mensaje enviado con éxito! 😊🎉",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } catch (error) {
+        console.error("Error al enviar el correo electrónico:", error);
+        setMessageState({
+          status: "failed",
+          message: "Hubo un error al enviar el correo electrónico 😢.",
+        });
+      }
     }
   };
 
@@ -59,11 +77,26 @@ export const useContactForm = () => {
     return valid;
   };
 
+  const showToast = () => {
+    if (messageState.status === "ok") {
+      toast.success(messageState.message);
+    } else if (messageState.status === "failed") {
+      toast.error(messageState.message);
+    }
+  };
+
+  useEffect(() => {
+    if (messageState.message) {
+      showToast();
+    }
+  }, [messageState.message]);
+
   return {
-    success,
+    messageState,
     handleChange,
     handleSubmit,
     formData,
     errors,
+    showToast,
   };
 };
