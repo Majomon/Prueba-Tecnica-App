@@ -21,9 +21,6 @@ Este proyecto es una página web de perfil de usuario desarrollada como parte de
   - Uso de CSS Modules para el manejo de estilos.
   - Incorporación de animaciones y transiciones suaves para mejorar la experiencia del usuario.
 
-## Requisitos no cumplidos
-  - Tests básicos.
-
 ## Instalación y Ejecución
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
