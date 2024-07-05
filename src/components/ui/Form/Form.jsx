@@ -2,9 +2,9 @@
 import { titleFont } from "@/config/fonts";
 import { useContactForm } from "@/hooks/useContactForm";
 import { IoSendOutline } from "react-icons/io5";
-import styles from "./FormContact.module.css";
+import styles from "./Form.module.css";
 
-export const FormContact = () => {
+export const Form = () => {
   const { formData, handleChange, handleSubmit, success, errors } =
     useContactForm();
 
@@ -24,7 +24,11 @@ export const FormContact = () => {
               onChange={handleChange}
               placeholder="Juan"
             />
-            {errors.name && <p className={styles.error}>{errors.name}</p>}
+            {errors.name && (
+              <p className={`${titleFont.className} ${styles.error}`}>
+                {errors.name}
+              </p>
+            )}
           </div>
           <div className={styles.box}>
             <label className={styles.label}>Email:</label>
@@ -36,7 +40,11 @@ export const FormContact = () => {
               onChange={handleChange}
               placeholder="juan@juan.com"
             />
-            {errors.email && <p className={styles.error}>{errors.email}</p>}
+            {errors.email && (
+              <p className={`${titleFont.className} ${styles.error}`}>
+                {errors.email}
+              </p>
+            )}
           </div>
           <div className={styles.box}>
             <label className={styles.label}>Mensaje:</label>
@@ -48,7 +56,11 @@ export const FormContact = () => {
               rows={10}
               placeholder="Ingresá tu mensaje"
             />
-            {errors.message && <p className={styles.error}>{errors.message}</p>}
+            {errors.message && (
+              <p className={`${titleFont.className} ${styles.error}`}>
+                {errors.message}
+              </p>
+            )}
           </div>
           <button type="submit" className={styles.buttonSend}>
             <IoSendOutline color="black" size={20} />

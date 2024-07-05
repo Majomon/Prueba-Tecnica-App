@@ -48,12 +48,14 @@
   text-align: center;
   padding: 0.8rem;
   background-color: var(--orange-400);
+  color: var(--dark);
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
+
 .contact:hover {
   background-color: var(--orange-300);
-  box-shadow: 1px 1px 2px var(--dark);
+  /* box-shadow: 1px 1px 2px var(--dark); */
 }
 
 .redes {
@@ -65,7 +67,10 @@
 }
 
 .containerImage {
-  padding: 1rem 0;
+  /*   padding: 1rem 0; */
+  margin: 1rem 0;
+  position: relative;
+  z-index: -10;
 }
 
 .image {
@@ -73,7 +78,19 @@
   max-height: 250px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 1px solid var(--secondary);
+  /* border: 1px solid var(--secondary); */
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--orange-300);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -10;
 }
 
 @media (min-width: 640px) {
@@ -111,5 +128,12 @@
   .image {
     max-width: 240px;
     max-height: 240px;
+  }
+
+  .box{
+    width: 240px;
+    height: 240px;
+    top: 15px;
+    left: 15px;
   }
 }

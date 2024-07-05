@@ -1,0 +1,31 @@
+.contact {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+.ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0.5rem 0;
+  font-size: 12px;
+}
+
+.containerLottie {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie {
+  width: 300px;
+  height: 300px;
+}

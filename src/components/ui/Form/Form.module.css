@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem 0;
 }
 
 .box {
@@ -19,9 +18,9 @@
 }
 
 .valueInput {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 5px;
-  border: 1px solid var(--orange-500);
+  border: 1px solid var(--orange-400);
   resize: none;
   outline: none;
 }
@@ -31,22 +30,21 @@
   display: flex;
   gap: 1rem;
 
-  background-color: var(--orange-500);
+  background-color: var(--orange-400);
   padding: 1rem;
   border-radius: 10px;
-
+  
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
 }
 
-.buttonSend:hover {
+.buttonSend:hover{
   background-color: var(--orange-300);
+  transition: all .3s ease-in-out;
 }
 
-.error {
-  padding: 0.5rem 0;
+.error{
   color: var(--danger);
-  font-weight: 500;
+  padding: .5rem 0;
 }

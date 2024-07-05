@@ -38,6 +38,7 @@ export const About = () => {
           height={800}
           className={styles.image}
         />
+        <div className={styles.box} />
       </div>
     </section>
   );

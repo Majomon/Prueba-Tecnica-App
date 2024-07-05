@@ -1,0 +1,35 @@
+.containerContact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--orange-400);
+  border: 1px solid var(--orange-500);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+.containerInfoContact {
+  width: 50%;
+  display: none;
+}
+
+
+@media (min-width: 720px) {
+  .containerInfoContact {
+    display: block;
+  }
+
+  .contactForm{
+    width: 50%;
+  }
+}
