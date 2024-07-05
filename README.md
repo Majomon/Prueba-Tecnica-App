@@ -1,18 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Perfil de Usuario - Prueba Técnica Frontend
 
-## Getting Started
+Este proyecto es una página web de perfil de usuario desarrollada como parte de una prueba técnica para evaluar habilidades frontend utilizando React y Next.js.
 
-First, run the development server:
+## Requisitos cumplidos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **HTML y CSS:**
+  - Cabecera con nombre del usuario y imagen de perfil.
+  - Sección "Sobre mí" con descripción del usuario.
+  - Lista de intereses del usuario.
+  - Formulario de contacto con campos para nombre, email y mensaje.
+  - Estilización con CSS puro.
+  - Web totalmente responsiva.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React y Next.js 14:**
+  - Estructura del proyecto implementada con Next.js 14.
+  - Componentes creados para cada sección de la página: Header, About, Interests, ContactForm.
+  - Formulario de contacto con validación básica y mensaje de éxito al enviar.
+
+- **Extras:**
+  - Uso de CSS Modules para el manejo de estilos.
+  - Incorporación de animaciones y transiciones suaves para mejorar la experiencia del usuario.
+
+## Requisitos no cumplidos
+  - Tests básicos.
+
+## Instalación y Ejecución
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. **Clona el repositorio:**
+
+    ```bash
+    git clone https://github.com/Majomon/Prueba-Tecnica-App.git
+    cd Prueba-Tecnica-App
+    ```
+
+2. **Instala las dependencias:**
+    ```
+    npm install
+    ```
+
+2. **Ejecuta la aplicación:**
+    ```
+    npm run dev
+    ```
+    -Esto iniciará la aplicación en modo de desarrollo. Abre http://localhost:3000 en tu navegador para ver la página web.
